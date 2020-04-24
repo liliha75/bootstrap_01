@@ -53,3 +53,18 @@
     background-color: rgba(0,0,0,.5);
     color: white;
 }
+
+.informacion{
+    padding-top: 30px;
+}
+
+.tarjetaimg{
+
+    width: 50%;
+}
+
+#speakers{
+
+    margin-top:20px;
+    margin-bottom: 10px;
+}

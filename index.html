@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Hello, world!</title>
+    <title>Laura Bootstrap!</title>
  
 
 
@@ -17,10 +17,10 @@
 
 
 
-  <body>
+  <body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="40">
     <!--Empieza header nav-->
 
-    <nav class="navbar navbar-expand-lg navbar-light" id="header">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="header">
       <!--Esto es para centrar los elementos del menu-->
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -33,11 +33,11 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item ">
+            <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#software">Software</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -60,7 +60,7 @@
     </nav>
 
     <!--Empieza main section-->
-<section class="Mainsec">
+<section class="Mainsec" id="Home">
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
       <div class="carousel-inner">
         <div class="carousel-item active imagen"  data-interval="5000">
@@ -75,7 +75,24 @@
       </div>
 
       <div class="overlay">
-        <h2>Bienvenido a mi portafolio</h2>
+        
+        <div class="container">
+
+          <div class="row">
+            <div class="col-6 offset-6 informacion">
+
+                <h2>Proyecto de 3D</h2>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                </p>
+
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">Suscribirse</button>
+
+            </div>
+
+          </div>
+        </div>
 
       </div>
 
@@ -89,6 +106,66 @@
         <span class="sr-only">Next</span>
       </a> -->
     </div>
+
+  </section>
+
+  <!--Speakers / otra seccion con cards-->
+
+  <section id="software" >
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col text-center">
+
+          <h2>Titulo de la seccion 2</h2>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <div class="card" >
+            <img src="images/mayalogo.jpg" class="card-img-top tarjetaimg" alt="logo Autodesk Maya">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge badge-primary">3D Modelling</span>
+              <p class="card-text">3D <abbr title="Polygonal modelling">Modelling</abbr> projects made in Autodesk Maya</p>
+              <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <div class="card" >
+            <img src="images/mayalogo.jpg" class="card-img-top tarjetaimg" alt="logo Autodesk Maya">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <div class="card" >
+            <img src="images/mayalogo.jpg" class="card-img-top tarjetaimg" alt="logo Autodesk Maya">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
 
   </section>
 
@@ -108,8 +185,44 @@
 
 
   </footer>
-    
 
+  <!--Modal, se recomienda ponerlo en el body-->
+    
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Suscribete</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form >
+            <div class="form-row">
+
+              <div class="form-group col">
+
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">First and last name</span>
+                  </div>
+                  <input type="text" aria-label="First name" class="form-control">
+                  <input type="text" aria-label="Last name" class="form-control">
+                </div>
+              </div>
+            </div>
+
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
    
         
 
